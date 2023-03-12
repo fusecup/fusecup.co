@@ -130,10 +130,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
   object {
     width: 150px;
   }
