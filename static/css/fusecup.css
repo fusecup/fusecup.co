@@ -44,7 +44,6 @@ body {
 body {
   color: #0C0B26;
   text-align: center;
-/*  text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
   font-family: 'CabinetGrotesk-Variable';
   font-weight: 800;
   font-size: 35px;
@@ -117,12 +116,29 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  object {
+    width: 250px;
+  }
 }
 
 @media (min-width: 992px) {
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+    
+}
+
+@media (max-width: 768px) {
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+  object {
+    width: 150px;
+  }
+  body {
+    font-size: 20px;
   }
     
 }
