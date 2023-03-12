@@ -134,7 +134,7 @@ body {
     width: 150px;
   }
   body {
-    font-size: 20px;
+    font-size: 25px;
   }
     
 }
@@ -150,7 +150,6 @@ body {
   #FDD262;
   
   filter: blur(0px);
-  z-index: -1000;
 
   -webkit-animation: fusecup 5s ease infinite;
     -moz-animation: fusecup 5s ease infinite;
