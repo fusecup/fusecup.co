@@ -6,17 +6,13 @@
 /* Custom Fonts */
 
 @font-face {
-  font-family: Nordica;
-  src: url('../fonts/NordicaHairline.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: striped_edges;
-  src: url('../fonts/striped_edges.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'CabinetGrotesk-Variable';
+  src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+       font-weight: 100 900;
+       font-display: swap;
+       font-style: normal;
 }
 
 /* Links */
@@ -44,13 +40,14 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url('../img/stardust.png');
-  background-color: #2c3e50;
 }
 body {
-  color: #fff;
+  color: #0C0B26;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+/*  text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
+  font-family: 'CabinetGrotesk-Variable';
+  font-weight: 800;
+  font-size: 35px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -130,10 +127,42 @@ body {
     
 }
 
-.lead {
-    font-family: striped_edges;
+
+.background {
+  position:fixed;
+  height: 100vh;
+  width: 100vw;
+  background: 
+  radial-gradient(66.41% 66.41% at 20% 60%, #854BFF 20%, rgba(255, 131, 175, 0) 100%) top left/130% 130%, 
+  radial-gradient(47.18% 71.84% at 54.72% 20%, #FF445C 20%, rgba(255, 68, 92, 0) 100%) top left/130% 130%, 
+  #FDD262;
+  
+  filter: blur(0px);
+  z-index: -1000;
+
+  -webkit-animation: fusecup 5s ease infinite;
+    -moz-animation: fusecup 5s ease infinite;
+    animation: fusecup 20s alternate infinite;
 }
 
-.n_font {
-    font-family: Nordica;
+@-webkit-keyframes fusecup {
+    0%{background-position: top left;}
+    25%{background-position: bottom left;}
+    50%{background-position: bottom right;}
+    65%{background-position: top right;}
+    100%{background-position: top left;}
+}
+@-moz-keyframes fusecup {
+    0%{background-position: top left;}
+    25%{background-position: bottom left;}
+    50%{background-position: bottom right;}
+    65%{background-position: top right;}
+    100%{background-position: top left;}
+}
+@keyframes fusecup {
+    0%{background-position: top left;}
+    25%{background-position: bottom left;}
+    50%{background-position: bottom right;}
+    65%{background-position: top right;}
+    100%{background-position: top left;}
 }
